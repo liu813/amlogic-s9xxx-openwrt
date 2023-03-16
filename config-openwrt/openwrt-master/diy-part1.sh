@@ -12,3 +12,4 @@
 # other
 # rm -rf package/utils/{ucode,fbtest}
 
+sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
